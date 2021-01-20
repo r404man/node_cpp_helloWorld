@@ -1,0 +1,65 @@
+:root {
+    --c-background: #242425;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--c-background);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-top: 250px;
+}
+
+.main-title {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+form select {
+    margin-bottom: 20px;
+    border-radius: 6px;
+    padding: 20px 5px 20px 5px;
+    width: 25%;
+}
+
+form input {
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+form input#word {
+    padding: 20px 5px 20px 5px;
+    border: transparent;
+}
+
+form input#send {
+    /* height: 100%; */
+    padding: 20px 5px 20px 5px;
+    margin: 0px;
+    border: transparent;
+
+    background-color: #696969;
+    /* font-size: 15px; */
+    /* font-weight: 600; */
+}
+
+.main-info {
+    padding: 20px 0px 0px 0px;
+    font-size: 20px;
+    color: #ffff;
+}

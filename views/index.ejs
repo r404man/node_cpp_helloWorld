@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="main-title">
+            Insert your crypt word
+        </div>
+        <form action="/" method="POST">
+            <select name="codeType">
+                <option value="code">Code</option>
+                <option value="decode">Decode</option>
+            </select>
+            <input type="text" name="word" id="word" placeholder="your word">
+            <input type="text" name="cryptStep" id="word" placeholder="your crypt step">
+            <input type="submit" id="send">
+        </form>
+
+        <div class="main-info">
+            <div class="info-title">
+                <% if(word !=null) { %>
+                    Your crypt word: <span><a id="userWord">
+                            <%= word%>
+                        </a></span>
+                    <% } else {%>
+                        Your word: <span><a id="userWord">
+                                <%= %>
+                            </a></span>
+                        <% } %>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
